@@ -1,0 +1,37 @@
+.header{
+  width: 100%;
+  border-bottom: 1px solid #A1A1A150;
+  position: absolute;
+  &__nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    align-items: center;
+  }
+  &__menu{
+    display: flex;
+    list-style-type: none;
+  }
+  &__link{
+    margin-right: 40px;
+    position: relative;
+    cursor: pointer;
+    &-style{
+      @include text(normal , 500 , 16px , 20px, #fff);
+      text-decoration: none;
+      text-align: $sleva;
+    }
+    &:hover::before{
+      position: absolute;
+      content: '';
+      height: 2px;
+      background-color: #ffffff;
+      width: calc(100% + 40px);
+      top: 59px;
+      left: -20px;
+    }
+    &_last{
+      margin-right: 0;
+    }
+  }
+}

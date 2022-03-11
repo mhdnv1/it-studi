@@ -1,0 +1,17 @@
+.all-projects{
+  padding: 100px 0 130px;
+  background: #F6F6F8;
+  &__title{
+    @include text(normal, bold, 36px, 53px, #000);
+  }
+  &__subtitle{
+    @include text(normal, normal, 16px, 25px, #999999);
+    margin: 50px 0 70px;
+  }
+  &__row{
+    margin-bottom: 50px;
+  }
+  &__img{
+    width: 100%;
+  }
+}

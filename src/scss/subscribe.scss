@@ -1,0 +1,41 @@
+.subscribe{
+  padding: 85px 0 85px;
+  &__title{
+    @include text(normal, 600, 18px, 22px, #000000);
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    @include text(normal, normal, 16px, 25px, #999999);
+    margin-bottom: 30px;
+  }
+  &__button{
+    display: inline-block;
+    width: 190px;
+    border-radius: 0px 30px 30px 0px;
+    margin: 0;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  }
+  &__form{
+    display: flex;
+    justify-content: center;
+
+  }
+  &__email{
+    width: 299px;
+    height: 45px;
+    border-radius: 30px 0px 0px 30px;
+    border: 1px solid #F2F2F2;
+    padding-left: 33px;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+
+    &::placeholder{
+      @include text(normal, normal, 13px, 21px, #999999);
+      text-align: $sleva;
+    }
+  }
+  &__spam{
+    @include text(normal, normal, 13px, 21px, #999999);
+    margin-top: 35px;
+  }
+}

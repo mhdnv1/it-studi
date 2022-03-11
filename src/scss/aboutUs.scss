@@ -1,0 +1,66 @@
+.aboutUs {
+  padding: 100px 0 70px;
+  background: #F6F6F8;
+
+  &__title {
+    @include text(normal, bold, 36px, 53px, #323232);
+    margin: 52px 0 40px;
+    text-align: $sleva;
+  }
+
+  &__subtitle {
+    @include text(normal, normal, 16px, 25px, #999999);
+    margin-bottom: 30px;
+    text-align: $sleva;
+  }
+
+  &__link {
+    @include text(normal, 500, 16px, 20px, #4985FF);
+  }
+
+
+  &__img {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    height: 100%;
+  }
+
+  &__row {
+    padding-bottom: 90px;
+    position: relative;
+
+    &::before {
+      width: 100%;
+      content: '';
+      position: absolute;
+      height: 1px;
+      background-color: #E0E0E0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__project-row{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+  }
+  &__col{
+    margin-right: 100px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__price{
+    @include text(normal, normal, 36px, 53px, #000000);
+    margin-left: 20px;
+  }
+  &__col-top{
+    display: flex;
+    align-items: center;
+  }
+  &__col-bot{
+    @include text(normal, normal, 16px, 25px, #999999);
+    margin-top: 7px;
+  }
+}

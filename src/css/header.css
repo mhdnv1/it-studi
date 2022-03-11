@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #A1A1A150;
+  position: absolute;
+}
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  list-style-type: none;
+}
+.header__link {
+  margin-right: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.header__link-style {
+  color: white;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.header__link:hover::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #ffffff;
+  width: calc(100% + 40px);
+  top: 59px;
+  left: -20px;
+}
+.header__link_last {
+  margin-right: 0;
+}

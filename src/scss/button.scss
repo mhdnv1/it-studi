@@ -1,0 +1,18 @@
+.button{
+  @include text(normal , 500 , 16px , 20px, #fff);
+  background: #4985FF;
+  box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+  border-radius: 30px;
+  width: 200px;
+  height: 45px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: 0.6s;
+  &:hover{
+    background: black;
+    transition: 0.6s;
+  }
+}

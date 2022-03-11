@@ -1,0 +1,12 @@
+.home{
+  padding: 319px 0 335px;
+  background: saddlebrown url("../images/first-screen/background.png") center/cover no-repeat;
+  &__title{
+    @include text(normal , 500 , 16px , 20px, #fff);
+    margin-bottom: 22px;
+  }
+  &__subtitle{
+    @include text(normal , 800 , 48px , 64px, #fff);
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,245 @@
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+}
+@media (min-width: 992px) {
+  //.burger{
+  //  display: none;
+  //}
+}
+
+@media (max-width: 992px) {
+
+  .video__box {
+    width: calc(100% - 70px);
+    height: 430px;
+  }
+  .aboutUs__project-row {
+    margin-top: 0;
+    flex-wrap: wrap;
+  }
+  .aboutUs__col {
+
+      margin-top: 50px;
+      margin-right: 50px;
+      margin-left: 50px;
+  }
+  .home__subtitle {
+    font-size: 41px;
+  }
+  .home {
+    padding: 315px 0 315px;
+  }
+  .services__title {
+    font-size: 34px;
+  }
+  .services__text {
+    margin-top: 20px;
+  }
+  .services__row {
+    .col-md-4 {
+      flex-direction: column;
+      align-items: center;
+
+      .services__circle {
+        margin-right: 0;
+      }
+    }
+
+  }
+  .aboutUs__title {
+    font-size: 31px;
+    line-height: 37px;
+    margin: 0 0 30px;
+  }
+  .aboutUs__subtitle {
+    margin-right: 44px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .aboutUs {
+    padding: 80px 0 60px;
+    background: #F6F6F8;
+  }
+  .all-services::before {
+    height: 410px;
+  }
+  .all-services {
+    padding: 80px 0 70px;
+  }
+  .all-services__col-title {
+    margin: 20px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+
+  }
+  .all-services__subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .all-projects {
+    padding: 80px 0 100px;
+  }
+  .video {
+    padding: 60px 0 70px;
+  }
+  .video__container::before {
+
+    bottom: -70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: saddlebrown;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+    &_active &-line{
+      height: 0;
+      &::before{
+        transform: rotate(45deg);
+        top: 0;
+      }
+      &::after{
+        transform: rotate(-45deg);
+        top: 0;
+      }
+    }
+    &-line{
+      width: 100%;
+      height: 3px;
+      background: white;
+      position: relative;
+      &::before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: white;
+        top: -11px;
+        left: 0;
+      }
+      &::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: white;
+        top: 11px;
+        left: 0;
+      }
+    }
+  }
+
+  .header__nav{
+    display: none;
+    &_active{
+      position: fixed;
+      display: flex;
+      top: 0;
+      right: 0;
+      width: 50%;
+      background-color: slateblue;
+      height: 100vh;
+      justify-content: center;
+      z-index: 1;
+    }
+    &_active .header__menu{
+      flex-direction: column;
+    }
+    &_active .header__link{
+      margin-top: 20px;
+      font-size: 22px;
+      &:hover::before{
+        display: none;
+      }
+    }
+    &_active .header__link .header__link-style:hover {
+      color: red;
+    }
+  }
+
+  .home {
+    padding: 280px 0 280px;
+
+    &__subtitle {
+      font-size: 29px;
+      line-height: 45px;
+    }
+  }
+
+  .services {
+    padding: 80px 0 85px;
+
+    &__title {
+      font-size: 23px;
+      line-height: 40px;
+      margin-bottom: 35px;
+    }
+
+    &__subtitle {
+      margin: 0 auto 10px;
+    }
+
+    &__row {
+      .col-md-4 {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 20px;
+        .services__circle {
+          margin-right: 18px;
+        }
+      }
+    }
+  }
+  .aboutUs {
+    padding: 60px 0 45px;
+    background: #F6F6F8;
+    &__title {
+      text-align: center;
+      font-size: 28px;
+    &__col{
+      margin-right: 100px;
+    }
+    }
+    &__subtitle {
+      margin-right: 0;
+      text-align: center;
+    }
+    &__link {
+      display: block;
+      margin-bottom: 30px;
+    }
+    .aboutUs__row {
+      justify-content: center;
+    }
+  }
+  .all-services__serviceRow{
+    justify-content: center;
+  }
+
+
+
+}
